@@ -8,6 +8,7 @@ The computer should have nodejs and it's package manager npm installed.
 Clone the repo then write the following commands :
 
 npm install
+
 npm start
 
 Open the browser on localhost:8080
