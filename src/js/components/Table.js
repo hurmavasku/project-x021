@@ -32,7 +32,8 @@ export class Table extends Component {
 				})
 			}});
 
-			this.setState({rows: data.data.map(function(row){
+			this.setState({rows: data.data.map(function(row){ 
+								console.log(row)
 								return {
 									key: row[0], cells:[{
 										key: "notes",
@@ -50,6 +51,43 @@ export class Table extends Component {
 										key: "civilian_labor_force",
 										content: row[4],
 										colspan: 1
+									},{
+										key: "civilian_labor_force",
+										content: row[5],
+										colspan: 1
+									},{
+										key: "civilian_labor_force",
+										content: row[6],
+										colspan: 1
+									},{
+										key: "civilian_labor_force",
+										content: row[7],
+										colspan: 1
+									},{
+										key: "civilian_labor_force",
+										content: row[8],
+										colspan: 1
+									},{
+										key: "civilian_labor_force",
+										content: row[9],
+										colspan: 1
+									},{
+										key: "civilian_labor_force",
+										content: row[10],
+										colspan: 1
+									},{
+										key: "civilian_labor_force",
+										content: row[11],
+										colspan: 1
+								    },{
+										key: "civilian_labor_force",
+										content: row[12],
+										colspan: 1
+									},{
+										key: "civilian_labor_force",
+										content: row[13],
+										colspan: 1
+
 									}]
 								}
 							})
@@ -74,7 +112,7 @@ render(){
 	          caption={caption}
 	          head={this.state.head}
 	          rows={this.state.rows}
-	          rowsPerPage={10}
+	          rowsPerPage={5}
 	          defaultPage={1}
 	          loadingSpinnerSize="large"
 	          isLoading={false}
